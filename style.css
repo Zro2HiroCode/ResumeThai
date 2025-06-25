@@ -1,0 +1,111 @@
+body {
+  font-family: 'Prompt', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.profile-left {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-content {
+  width: 75%;
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1.5px dashed #283b44;
+  margin-bottom: 20px;
+}
+
+.sample-img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #224143;
+}
+
+h3 {
+  font-size: 1em;
+  background: #224143;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  margin: 15px 0 8px;
+}
+
+p, li {
+  font-size: 0.85em;
+  line-height: 1.4;
+  margin: 3px 0;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+.section {
+  margin-bottom: 10px;
+}
+
+.language-skill p {
+  margin: 0.3em 0 0.2em;
+  font-size: 0.85em;
+}
+
+.level {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 0.6em;
+}
+
+.dot {
+  width: 14px;
+  height: 2px;
+  border-radius: 3px;
+  background-color: #ccc;
+}
+
+.dot.filled {
+  background-color: #319c1e;
+}
+
+@media print {
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    font-size: 12px;
+  }
+
+  .container {
+    box-shadow: none;
+    margin: 0;
+    padding: 15px;
+    height: 100vh;
+    page-break-inside: avoid;
+  }
+
+  .profile-img, .sample-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
